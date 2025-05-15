@@ -1,40 +1,67 @@
-body,main{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+main, header{
     display: flex;
     justify-content: center;
     align-items: center;
-min-height: 800px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    font-family: Roboto;
+}
+body{
+    box-sizing: border-box;
     background-color: black;
     color: white;
 }
-
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:70%;
-    gap:10px
 }
 .imgContainer{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     img{
-        width:10%;
+        
         cursor: pointer;
+        border-radius: 3%;
+        border: 3px solid white;
+        width: 160px;
+        height: 170px;
+        padding: 5px;        
+    }
+    img:hover {
+        transform: scale(1.03);  
     }
 }
-
 .pointsContainer{
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 .points{
-    font-size: 1em;
+    font-size: 1.2em;
+    padding: 8px;
+    border: 2px solid rgb(113, 108, 108);
+    border-radius: 3%;
     span{
-        font-size: 1.2em;
-    }
+        font-size: 1.4em;
+    };
+   
+}
+#start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#winner{
+    font-size: 1.2em;
+    margin: 5px;
+}
+.star{
+    width: 30px;
 }
