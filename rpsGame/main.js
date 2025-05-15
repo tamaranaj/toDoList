@@ -8,6 +8,8 @@ const htmlElements={
     userChoice:document.getElementById('userChoice'),
     computerChoice:document.getElementById('computerChoice'),
     messageDiv:document.getElementById('winner'),
+    divContainer: document.getElementById('container'),
+    start: document.getElementById('startGame'),
     
     imageEvent:()=>{
         for (let i = 0; i < htmlElements.options.length; i++) {
@@ -30,6 +32,12 @@ const htmlElements={
 
 
 const gameService = {
+
+    startGame:()=>{
+        htmlElements.start.addEventListener('click',()=>{
+            
+        })
+    },
     userPoints:0,
     computerPoints:0,
     checkWinner:(user, computer)=>{
