@@ -19,35 +19,29 @@ body{
 .list-container{
     padding: 15px;
     margin: 50px;
-    width: 40%;
+    width: 55%;
     background-color:#48524e ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     border-radius: 10px;
 }
 
 .rowItems{
-   width: 100%;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 10px;
-    align-items: center;
-    gap: 5px;
-    
+     border-radius: 10px;
+    align-items: center;  
   
     
 }
 .rowItems:hover{
-    border: 3px solid black;
-    padding: 8px;
+    /* background-color: #505452 ; */
+    border: 3px solid #48524e ;
+    padding: 5px;
 }
 .todosList{
     width: 90%;
-    display: flex;
-    flex-direction: column;
     gap: 20px;
 
 }
@@ -83,3 +77,16 @@ body{
     }
   }
   
+
+.filters{
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rowBtns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
