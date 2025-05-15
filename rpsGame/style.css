@@ -2,7 +2,9 @@ body,main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+min-height: 800px;
+    background-color: black;
+    color: white;
 }
 
 .container{
@@ -10,11 +12,13 @@ body,main{
     flex-direction: column;
     align-items: center;
     width:70%;
+    gap:10px
 }
 .imgContainer{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     img{
         width:10%;
         cursor: pointer;
@@ -22,7 +26,15 @@ body,main{
 }
 
 .pointsContainer{
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.points{
+    font-size: 1em;
+    span{
+        font-size: 1.2em;
+    }
 }
