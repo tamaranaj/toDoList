@@ -136,8 +136,8 @@ const starService = {
     
   },
 };
-window.addEventListener("DOMContentLoaded", () => {
+ window.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
-      gameService.startGame();
+       gameService.startGame();
     }, 2000);
 });
